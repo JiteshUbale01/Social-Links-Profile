@@ -1,0 +1,140 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cream);
+}
+
+@media screen and (max-width:1920px) {
+    main{
+        width: 600px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productImg #desktopImg{
+        height: 450px;
+        width: 300px;
+    }
+
+    #mobileImg{
+        display: none;
+    }
+
+    .productDesc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 23px;
+        height: 100%;
+        background: var(--white);
+    }
+
+    .content #productCategory{
+        font-size: 12px;
+        letter-spacing: 5px;
+        line-height: 15px;
+        font-weight: 500;
+        color: var(--darkGrayishBlue);
+        text-transform: uppercase;
+        /* margin-bottom: 20px; */
+    }
+
+    .content h1{
+        margin: 1em auto;
+    }
+
+    .content #productDesc{
+        font-size: 1rem;
+        line-height: 1.5;
+        color: var(--darkGrayishBlue);
+    }
+
+    .price{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .price h2{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2;
+        color: var(--darkCyan);
+    }
+
+    .price p{
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.25;
+        color: var(--darkGrayishBlue);
+        text-decoration: line-through;
+    }
+
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--darkCyan);
+        gap: 20px;
+        height: 50px;
+        border-radius: 6px;
+    }
+
+    .btn>span{
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: var(--white);
+    }
+}
+
+
+@media screen and (max-width:592px) {
+    main{
+        flex-direction: column;
+        width: 75%;
+    }
+    
+    .productImg{
+        margin-top: 1em;
+    }
+
+    #desktopImg{
+        display: none;
+    }
+
+    #mobileImg{
+        display: block;
+        width: 100%;
+    }
+
+    .productDesc{
+        padding: 15px;
+    }
+
+    .content #productCategory{
+        font-size: 13px;
+    }
+    .content h1{
+        margin: 1rem auto;
+    }
+}
