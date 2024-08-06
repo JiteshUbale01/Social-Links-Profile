@@ -93,3 +93,42 @@
     background-color: hsl(75, 94%, 57%);
 }
 
+@media screen and (max-width:576px) {
+    .main{
+        width: 290px;
+        padding: 1rem 0;
+    }
+
+    .main .intro{
+        gap: 11px;
+        margin: 11px 0;
+    }
+
+    .main .intro img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .main .intro h3{
+        font-size: 1.8rem;
+        margin-bottom: 11px;
+    }
+
+    .main .intro p{
+        font-size: 1rem;
+    }
+
+    .main .links{
+        margin: 13px 0;
+    }
+    
+
+    .main .links .social{
+        font-size: 1rem;
+    }
+
+    .main .links .social:last-of-type{
+        margin: 0;
+    }
+}
+
